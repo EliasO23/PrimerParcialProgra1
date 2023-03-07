@@ -13,10 +13,10 @@ namespace PrimerParcialProgra1.Negocio
 
             if (ventas.Precio >= 50){
                 ventas.Descuento = ventas.Precio - 10;
-                return ($"Precio: {ventas.Precio} \nPrecio con Descuento: {ventas.Descuento}\nTOTAL A PAGAR: {ventas.Descuento}");
+                return ($"Precio:                  {ventas.Precio} \nPrecio con Descuento:    {ventas.Descuento}\nTOTAL A PAGAR:           {ventas.Descuento}");
             }
             else{
-                return ($"Precio {ventas.Precio}");
+                return ($"Precio                   {ventas.Precio} \nPrecio con Descuento:    {ventas.Descuento}\nTOTAL A PAGAR:           {ventas.Precio}");
             }
         }
     }

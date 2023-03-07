@@ -33,22 +33,24 @@ if (Resultado == true){
     ventas.Descripcion = Console.ReadLine();
     Console.WriteLine("Ingrese el precio del producto: ");
     ventas.Precio = Convert.ToDecimal(Console.ReadLine());
-    Console.WriteLine("Ingrese la cantidad del producto que dease acomprar: ");
+    Console.WriteLine("Ingrese la cantidad del producto: ");
     ventas.Cantidad = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("--------------");
+    Console.WriteLine("\n---------------------------------");
     Console.WriteLine("Recibo de Pago");
-    Console.WriteLine("--------------\n");
-    Console.WriteLine(ventas.Identificador);
-    Console.WriteLine(ventas.Nombre);
-    Console.WriteLine(ventas.Descripcion);
-    Console.WriteLine($"Precio Unitario: {ventas.Precio}");
-    Console.WriteLine($"Cantidad de Productos: {ventas.Cantidad}");
+    Console.WriteLine("---------------------------------");
+    Console.WriteLine($"Identificador:           {ventas.Identificador}");
+    Console.WriteLine($"Nombre del producto:     {ventas.Nombre}");
+    Console.WriteLine($"Descripcion:             {ventas.Descripcion}");
+    Console.WriteLine($"Precio Unitario:         {ventas.Precio}");
+    Console.WriteLine($"Cantidad de Productos:   {ventas.Cantidad}");
+    Console.WriteLine("---------------------------------");
     Console.WriteLine(clsVenta.Cobro(ventas));
+    Console.WriteLine("---------------------------------\n");
 
 }else{
     Console.WriteLine("        INICIO DE SESION INCORRECTO        ");
-    Console.WriteLine("Nombre de usuario y/o contraseña incorrecta");
+    Console.WriteLine("Nombre de usuario y/o contraseña incorrecta\n");
 
 }
 
